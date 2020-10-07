@@ -6,13 +6,12 @@
 
 body {
     font-family: Roboto, system, Segoe UI, Tahoma, -apple-system;
+
 }
 
 .nav-bar-main-item a:hover  {
     text-decoration: underline;
 }
-
-
 .header-full-width {
     width: 100%;
     background-color: #ae0b05;
@@ -34,6 +33,7 @@ body {
     display: flex;
     padding: 5px;
     align-items: center;
+    font-size: larger;
 }
 
 .nav-bar-main-item a 
@@ -53,25 +53,16 @@ body {
 {
     width: 100%;
     height: 873px;
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("original.png");
     background-repeat: no-repeat;
     text-align: center;
-    position: relative;
-    z-index: 9999;
-}
-.bild img
-{
-    width: 100%;
-    height: 873px;
-    overflow: hidden;
 }
 .search-bar
 {
     padding-top: 20%;
     border: red;
-    z-index: 1;
+    height: 100%;
 }
-#Search-button-input
+#Search-text-input
 {
     padding: 20px;
     width: 40%;
@@ -86,4 +77,28 @@ body {
     background-color: #ae0b05;
     color: white;
     border: none;
+    cursor: pointer;
+}
+ul.sub-menu
+{
+    position: absolute;
+    display: block;
+    margin-left: 0px;
+    margin-top: 18px;
+    list-style-type: none;   
+}
+.nav-bar-main .sub-menu
+{
+    display: none;
+}
+.nav-bar-main .nav-bar-main-item:hover .sub-menu
+{
+    width: 15%;
+    display: block;
+    text-align: center;
+    font-size: large;
+    line-height: 40px;
+    background-color: #ae0b05;
+    margin-left: -9%;
+    margin-top: 1.5%;
 }
