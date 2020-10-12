@@ -6,7 +6,7 @@
 
 body {
     font-family: Roboto, system, Segoe UI, Tahoma, -apple-system;
-
+    background-color: #fafafa;
 }
 
 .nav-bar-main-item a:hover  {
@@ -120,69 +120,50 @@ ul.sub-menu
 {
     float: left;
 }
-
-/* Dropdown Button */
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    padding: 20px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
-
-  .container {
-      border: 1px solid black;
-      width: 50%;
-      padding: 10px;
-      margin-left: 25%;
-  }
-
-  .add {
-    float: right;
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+.container {
+    border: 1px solid black;
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
   }
   .paragraph {
     font-size: larger;
+}
+.selectedCourses{
+    background-color: #ffffff);
+    font-size: 20px;
+    width: 25%;
+    height: auto;
+    position: absolute;
+    right: 0%;
+    top: auto;
+    list-style-type: none;
+    text-align: center;
+}
+.courseList{
+    background-color: #ffffff;
+    width: 40%;
+    height:auto;
+    font-size: 20px;
+    margin-left: 25%;
+    position: absolute;
+    left: 0%;
+    top: auto;
+    text-align: center;
+    list-style-type: none;
+}
+.knapp
+{
+    background-color: #c23a36;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 6px;
+    cursor: pointer;
+    float: right;
+    width: 30%;
+}
+.bla
+{
+    width: 60%;
+    float: left;
 }
