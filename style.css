@@ -6,7 +6,13 @@
 
 body {
     font-family: Roboto, system, Segoe UI, Tahoma, -apple-system;
+<<<<<<< HEAD
     background-color: #fafafa;
+=======
+    background-color: rgb(236, 236, 236)
+    
+
+>>>>>>> ee2072894633544a557fa56630dab98452d87836
 }
 
 .nav-bar-main-item a:hover  {
@@ -24,7 +30,7 @@ body {
 
 .nav-bar-main {
     height: 100%;
-    width: 80%;
+    width: 60%;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -120,6 +126,7 @@ ul.sub-menu
 {
     float: left;
 }
+<<<<<<< HEAD
 .container {
     border: 1px solid black;
     width: 50%;
@@ -130,7 +137,7 @@ ul.sub-menu
     font-size: larger;
 }
 .selectedCourses{
-    background-color: #ffffff);
+    background-color: #ffffff;
     font-size: 20px;
     width: 25%;
     height: auto;
