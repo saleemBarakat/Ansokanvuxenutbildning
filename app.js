@@ -73,7 +73,28 @@ let courses = [
     { id: 8, title: "Automationselektriker" },
     { id: 9, title: "Vård och omsorgsutbildning" },
     { id: 10, title: "Murare" },
-    { id: 11, title: "Bygg-Anläggning" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
+    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
   ];
   
   courses.forEach((course) => {
@@ -89,6 +110,8 @@ let courses = [
     h4.className = "bla";
     h4.id = id;
     h4.innerHTML = title;
+
+   
   
   
     li.appendChild(h4);
@@ -96,7 +119,7 @@ let courses = [
   
     document.getElementById("courseList").appendChild(li);
   }
-  
+
   function checkId(clickedElement) {
     addSelectedCourse(clickedElement.parentNode.id);
   }
@@ -116,7 +139,9 @@ let courses = [
   
       li.appendChild(h4);
   
-      var deleteButton = '<button onClick="removeCourse(this)">Ta bort</button>';
+      var deleteButton = '<button onClick="removeCourse(this)" class="knapp">Ta bort</button>';
+      h4.id = id;
+      h4.className = "bla"
   
       li.insertAdjacentHTML("beforeend", deleteButton);
   

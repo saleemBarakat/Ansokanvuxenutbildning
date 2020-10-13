@@ -6,13 +6,7 @@
 
 body {
     font-family: Roboto, system, Segoe UI, Tahoma, -apple-system;
-<<<<<<< HEAD
-    background-color: #fafafa;
-=======
-    background-color: rgb(236, 236, 236)
-    
-
->>>>>>> ee2072894633544a557fa56630dab98452d87836
+    background-color: rgb(236, 236, 236);
 }
 
 .nav-bar-main-item a:hover  {
@@ -65,6 +59,13 @@ body {
     height: 873px;
     background-repeat: no-repeat;
     text-align: center;
+}
+@media screen and (max-width:1500px)
+{
+    .bild
+    {
+        width: 100%;
+    }
 }
 .search-bar
 {
@@ -126,7 +127,6 @@ ul.sub-menu
 {
     float: left;
 }
-<<<<<<< HEAD
 .container {
     border: 1px solid black;
     width: 50%;
@@ -161,16 +161,21 @@ ul.sub-menu
 }
 .knapp
 {
-    background-color: #c23a36;
-    color: rgb(255, 255, 255);
+    background-color: #ae0b05;
+    color: #fff;
     font-size: 15px;
-    padding: 6px;
+    padding: 16px;
     cursor: pointer;
-    float: right;
     width: 30%;
+    margin: 10px;
+    border: none;
 }
 .bla
 {
     width: 60%;
     float: left;
+    font-size: larger;
+    font-weight: bold;
+    text-align: left;
+    padding: 15px;
 }
