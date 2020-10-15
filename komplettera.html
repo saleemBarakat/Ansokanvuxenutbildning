@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+
+    <head>
+        <title>Ansökan Vuxenutbildning Helsingborg stad</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="app.js"></script>
+    </head>
+    <header id="header">
+        <div id="sticky-header" class="header-full-width">
+            <ul class="nav-bar-main">
+                <li class="nav-bar-main-item"><a href="startsida.html">Startsida</a></li>
+                <li class="nav-bar-main-item"><a href="utbildningar.html">Utbildningar</a></li>
+                <li class="nav-bar-main-item"><a href="#">Studieplan</a></li>
+                <li class="nav-bar-main-item"><a href="schema.html">Schema</a></li>
+            </ul>
+        </div>
+    </header>
+    <body>
+        <div class="bilder"style="background-image:url(https://cdn.hoodin.com/skaneleden/images/ia15xcgeuzsftntsayopcglhl2jdkfim/original.png); position:absolute">
+            <div class="kompletering">
+                <h1>Komplettera information</h1>
+                <p style="font-size: larger;">Fält markerade med * är obligatoriska för att bli antagen</p>
+                <table>
+                    <h3 style="margin-top:5px;">Tidigare utbildning *</h3>
+                        <select style="font-size: medium; padding: 5px;" name="utbildning">
+                            <option>Utländsk utbildning</option>
+                            <option>Outbildad</option>
+                            <option>Svensk grundskola</option>
+                            <option>Svensk gymnasial utbildning 2 år eller kortare</option>
+                            <option>Svensk gymnasial utbildning längre än 2 år</option>
+                            <option>Svensk eftergymnasial utbildning</option>
+                        </select>
+                </table>  
+                <table>
+                    <h3 style="margin-top:5px;">Nuvarande sysselsättning *</h3>
+                        <select style="font-size: medium; padding: 5px;" name="sysselsättning">
+                            <option>Arbetar Heltid</option>
+                            <option>Arbetar Deltid</option>
+                            <option>Studerar</option>
+                            <option>Risk att bli arbetslös</option>
+                            <option>Arbetssöknade</option>
+                            <option>Annat</option>
+                        </select>
+                </table>  
+                <table>
+                    <h3 style="margin-top:5px;">Utbildningssyfte *</h3>
+                    <select style="font-size: medium; padding: 5px;" name="Utbildningssyfte">
+                        <option>Prövning</option>
+                        <option>Validera tidigare yrkeserfarenhet</option>
+                        <option>Att arbeta med: Data/it</option>
+                        <option>Att arbeta med: Administration, ekonomi och juridik</option>
+                        <option>Att arbeta med: Bygg och anläggning</option>
+                        <option>Att arbeta med: Fordon ochTransport</option>
+                        <option>Att arbeta med: Försäljning och Handel</option>
+                        <option>Att arbeta med: Hantverk och tillverkning</option>
+                        <option>Att arbeta med: Hotell och Restaurang och kök</option>
+                        <option>Att arbeta med: Hälso och sjukvård</option>
+                        <option>Att arbeta med: Kultur, media och design</option>
+                        <option>Att arbeta med: Pedagogiskt arbete</option>
+                        <option>Att arbeta med: Socialt arbete</option>
+                        <option>Att arbeta med: Säkerhetsarbete</option>
+                        <option>Att arbeta med: Tekniskt arbete</option>
+                        <option>Att arbeta med: Annat yrkesområde</option>
+                    </select>
+
+                </table>  
+                    <textarea style="font-size: medium; text-align: center;margin-top: 15px; color: solid black;" name="Textruta" id="" cols="50" rows="3" placeholder=
+                    "Ange kurs/kurser/yrke eller övrig info om utbildningarna"></textarea>                
+
+                <table>
+                    <h3 style="margin-top:5px;">Studiemedel *</h3>
+                        <select style="font-size: medium; padding: 5px;" name="Studiemedel">
+                            <option >Jag kommer att ansöka om studiemedel</option>
+                            <option >Jag kommer inte att ansöka om studiemedel</option>
+                        </select>
+                    </tr>
+                </table>  
+                <h3 style="margin-top:5px;">Varför vill du studera den här kursen eller utbildningen? *</h3>
+                <textarea style="text-align: center;" name="motivering" id="" cols="100" rows="3" placeholder="Motivera varför vill du läsa just den här kursen eller utbildningen?"></textarea>
+                
+                <h3 style="margin-top:5px;">Är du i behov av extra stöd i studier till exempel pga. Dislexi ?*</h3>
+                <textarea style="text-align: center;" name="stöd" id="" cols="100" rows="3" placeholder="Är du i behov av särskilt stöd?"></textarea>
+
+                <h3 style="margin-top:5px;">Skriv önskat startdatum samt hur mycket du vill studera (100%, 75%, 50%, 25%) *</h3>
+                <textarea style="text-align: center;" name="takt" id="" cols="100" rows="3" placeholder="Vilken takt har du tänkt studera på?"></textarea>
+
+                <h3 style="margin-top:5px;">Vad är ditt mål med studierna? *</h3>
+                <textarea style="text-align: center;"  name="mål" id="" cols="100" rows="3" placeholder="Vad har du för mål med studierna?"></textarea>
+                <div>
+                    <a href="utbildningar.html"><button class="button-hamta" id="button-hamta">Föregående</button></a>
+                    <a href="kontakt.html"><button class="button-hamta">Nästa</button></a>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
