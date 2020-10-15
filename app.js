@@ -1,4 +1,6 @@
-function mySearchFunction (){
+//sökfunktion på första sidan
+function mySearchFunction ()
+{
     var input,filter,ul,li,item,i,txtValue;
     input = document.getElementById("Search-text-input");
     
@@ -12,56 +14,31 @@ function mySearchFunction (){
         txtValue = item.textContent || item.innerText;
         
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display ="";
-            
+            li[i].style.display ="";     
         }
         else{
-                li[i].style.display = "none";
+                li[i].style.display = "";
             }
         }
     }
-
-
-    var accordionItem = document.getElementsByClassName("accordion-item");
-    var i;
-    
-    for (i = 0; i < accordionItem.length; i++) {
-    
-        accordionItem[i].addEventListener("click", function () {
-            var icon = this.getElementsByClassName("plus-icon");
-            var panel = this.nextElementSibling;
-    
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-    
-                icon[0].classList.remove('fa-minus-circle');
-                icon[0].classList.add('fa-plus-circle')
-            } else {
-                panel.style.display = "block";
-    
-                icon[0].classList.add('fa-minus-circle');
-                icon[0].classList.remove('fa-plus-circle');
-            }
-        });
-    }
-
+//dropdown knapp
     function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      // Close the dropdown menu if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
           }
         }
       }
-
+    }
+//kurser och lägg till och ta bort knapparna
 let courses = [
     { id: 1, title: "Administratör" },
     { id: 2, title: "Målare" },
@@ -73,47 +50,20 @@ let courses = [
     { id: 8, title: "Automationselektriker" },
     { id: 9, title: "Vård och omsorgsutbildning" },
     { id: 10, title: "Murare" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
-    { id: 12, title: "Bygg-Anläggning, <h6>skriv info här</h6>" },
   ];
   
   courses.forEach((course) => {
     createCourse(course.id, course.title);
   });
-  
+//skapar en ny div vid sidan om om man trycker på "lägg till" en kurs
   function createCourse(id, title) {
     var li = document.createElement("div");
     li.id = id;
       var button = '<button onClick="checkId(this)" class="knapp">Lägg till</button>';
-
     var h4 = document.createElement("div");
     h4.className = "bla";
     h4.id = id;
     h4.innerHTML = title;
-
-   
-  
-  
     li.appendChild(h4);
     li.insertAdjacentHTML("beforeend", button);
   
@@ -123,7 +73,7 @@ let courses = [
   function checkId(clickedElement) {
     addSelectedCourse(clickedElement.parentNode.id);
   }
-  
+  //tar bort en specifik kurs om man trycker på "ta bort"
   function addSelectedCourse(id) {
 
     var selectedCourseAlreadySelected = document.getElementById(courses[id - 1].title);
@@ -148,7 +98,20 @@ let courses = [
       document.getElementById("selectedCourses").appendChild(li);
     }
   }
-  
+
   function removeCourse(course) {
     document.getElementById(course.parentNode.id).remove();
   }
+
+function displayDate() {
+  document.getElementById("datum").innerHTML = Date();
+  
+  function on() {
+  document.getElementById("datum").style.display = "block";
+}
+
+function off() {
+  document.getElementById("datum").style.display = "none";
+}
+}
+
