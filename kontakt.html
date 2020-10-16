@@ -6,300 +6,313 @@
     <title>kontakt</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<header id="header">
+    <div id="sticky-header" class="header-full-width">
+        <ul class="nav-bar-main">
+            <li class="nav-bar-main-item"><a href="#">Startsida</a></li>
+            <li class="nav-bar-main-item"><a href="utbildningar.html">Utbildningar</a>
+            </li>
+            <li class="nav-bar-main-item"><a href="studieplan.html">Studieplan</a></li>
+            <li class="nav-bar-main-item"><a href="schema.html">Schema</a></li>
+        </ul>
+    </div>
+</header>
 <body>
-    <div class="kontaktbord">
-        <h3>kontakt uppgifter</h3>
-        <p>(*Obligatoriskt fält*)</p>
-        <table>
-            <tr>
-                <td>Personnummer</td>
-                <td>000723-1328</td>
-            </tr>
-            <tr>
-                <td>Förnamn</td>
-                <td>Saleem</td>
-            </tr>
-            <tr>
-                <td>Efternamn</td>
-                <td>Barakat</td>
-            </tr>
-            <tr>
-                <td>Adress</td>
-                <td>Traktörsgatan 9 Lgh 1003</td>
-            </tr>
-            <tr>
-                <td>C/O adress</td>
-                <td><input type="C/O adress" placeholder="C/O adress"></td>
-            </tr>
-            <tr>
-                <td>Postadress</td>
-                <td>Helsingborg</td>
-            </tr>
-            <tr>
-                <td>Telefon</td>
-                <td><input type="Telefonnummer" placeholder="Telefonnummer"></td>
-            </tr>
-            <tr>
-                <td>Mobil</td>
-                <td><input type="Mobilnummer" placeholder="Mobilnummer"></td>
-            </tr>
-            <tr>
-                <td>E-postadress</td>
-                <td><input type="E-postadress" placeholder="E-post"></td>
-            </tr>
-            <tr>
-                <td>Bekräfta e-postadress</td>
-                <td><input type="E-postadress" placeholder="Bekräfta E-post"></td>
-            </tr>
-            <tr>
-                <td>Hemkommun</td>
-                <td>Helsingborg</td>
-            </tr>
-            <tr>
-                <td>Modersmål</td>
-                <td><select name="språk">
-                    <option value=""></option>
-						<option value="BSA">Abinomn</option>
-						<option value="ACE">Acehnesiska (Indonesia, Sumatra)</option>
-						<option value="ACH">Acoli (Uganda)</option>
-						<option value="AAR">Afar, Danakil (Djibouti, Eritrea, Etiopien)</option>
-						<option value="AFR">Afrikaans</option>
-						<option value="AKA">Akan, Asante, Fante, Twi (Ghana, Elfenbenskusten)</option>
-						<option value="AKS">Akasele, Cemba, Chamba, Kamba, Kasele, Tchamba</option>
-						<option value="SQI">Albanska</option>
-						<option value="AMH">Amhariska (Etiopien)</option>
-						<option value="ARA">Arabiska</option>
-						<option value="HYE">Armeniska</option>
-						<option value="ASM">Assamese</option>
-						<option value="AII">Assyriska, Nyarameiska</option>
-						<option value="AYM">Aymara (Bolivia)</option>
-						<option value="AZE">Azerbadjanska</option>
-						<option value="BAL">Baluchi, Baloci, Baluci, Makrani</option>
-						<option value="BAM">Bambara (Västafrika)</option>
-						<option value="BAI">Bamileke (Kamerun)</option>
-						<option value="BFA">Bari (Södra Sudan)</option>
-						<option value="BSQ">Basaa</option>
-						<option value="EUS">Baskiska</option>
-						<option value="BEM">Bemba, Chibemba, Chiwemba, Ichibemba, Wemba (Zambia)</option>
-						<option value="BEN">Bengaliska</option>
-						<option value="BER">Berbiska</option>
-						<option value="BIK">Bikol</option>
-						<option value="BIL">Bile (Nigeria)</option>
-						<option value="BYN">Bilen, Bilein, Bileno, Bilin (Eritrea)</option>
-						<option value="BIN">Bini eller Edo</option>
-						<option value="BOS">Bosniska</option>
-						<option value="BUL">Bulgariska</option>
-						<option value="MYA">Burmesiska</option>
-						<option value="CEB">Cebuanska, Binisaya, Sebuano, Sugbuanon, Sugbuhanon, Visayan</option>
-						<option value="CNH">Chin- Myanmar (Burma, Indien, Bangladesh)</option>
-						<option value="KDH">Cotocoli, Kotokoli, Temba, Tim, Timu</option>
-						<option value="DAN">Danska</option>
-						<option value="DAR">Darginska, Dargi, Dargin, Dargintsy, Khiurkilinskii, Uslar</option>
-						<option value="PRS">Dari, Parsi, Persian</option>
-						<option value="DIQ">Dimli</option>
-						<option value="DIN">Dinka</option>
-						<option value="DIV">Divehi (Maldiverna)</option>
-						<option value="DHV">Drehu/Dehu</option>
-						<option value="ENG">Engelska</option>
-						<option value="EST">Estniska</option>
-						<option value="EWE">Ewe (Ghana)</option>
-						<option value="FAN">Fang (Equatorial Guinea)</option>
-						<option value="FIJ">Fijianska</option>
-						<option value="FIL">Filipino</option>
-						<option value="FIN">Finska</option>
-						<option value="VLS">Flamländska</option>
-						<option value="FRA">Franska</option>
-						<option value="FUL">Fula/Fulani</option>
-						<option value="FAO">Färöiska</option>
-						<option value="GAA">Ga (Ghana)</option>
-						<option value="GBM">Garhwali</option>
-						<option value="KAT">Georgiska</option>
-						<option value="HAC">Gorani/Gurani</option>
-						<option value="ELL">Grekiska</option>
-						<option value="KAL">Grönländska</option>
-						<option value="GUJ">Gujarati, Lisan al-dawat (Indien)</option>
-						<option value="HAU">Hausa</option>
-						<option value="HEB">Hebreiska</option>
-						<option value="HIL">Hiligaynon/Ilonggo</option>
-						<option value="HIN">Hindi</option>
-						<option value="HMN">Hmong</option>
-						<option value="IBO">Ibo, Igbo (Nigeria)</option>
-						<option value="ILO">Iloko/Ilokano</option>
-						<option value="IND">Indonesiska</option>
-						<option value="INH">Ingusjiska</option>
-						<option value="ISL">Isländska</option>
-						<option value="ITA">Italienska</option>
-						<option value="JPN">Japanska</option>
-						<option value="JAV">Javanesiska</option>
-						<option value="YID">Jiddisch</option>
-						<option value="YIH">Jiddisch (Väst)</option>
-						<option value="YDD">Jiddisch (Öst)</option>
-						<option value="DYO">Jola-Fonyi</option>
-						<option value="KSP">Kaba (Centrala Sudan)</option>
-						<option value="KFR">Kachchi</option>
-						<option value="KEO">Kakwa</option>
-						<option value="KAM">Kamba, Kekamba, Kikamba (Kenya)</option>
-						<option value="KAN">Kannada (Indien)</option>
-						<option value="KAR">Karenska (Burma, Thailand)</option>
-						<option value="CAT">Katalanska (Katalonien)</option>
-						<option value="KAZ">Kazakiska (Kazakstan)</option>
-						<option value="KHA">Khasi</option>
-						<option value="KHM">Khmer (Kambodja)</option>
-						<option value="KJG">Khmu</option>
-						<option value="KIK">Kikuyu (Kenya)</option>
-						<option value="ZHO">Kinesiska</option>
-						<option value="HAK">Kinesiska, Hakka</option>
-						<option value="YUE">Kinesiska, Kantonesiska</option>
-						<option value="CMN">Kinesiska, Mandarin</option>
-						<option value="NAN">Kinesiska, Min Nan</option>
-						<option value="KIN">Kinyarwanda (Rwanda)</option>
-						<option value="KIR">Kirgisiska</option>
-						<option value="RUN">Kirundi (Burundi)</option>
-						<option value="KON">Kongo</option>
-						<option value="KOR">Koreanska (Korea)</option>
-						<option value="SES">Koyraboro Senni Songhai</option>
-						<option value="ROP">Kreolska</option>
-						<option value="KRI">Krio</option>
-						<option value="HRV">Kroatiska</option>
-						<option value="KRO">Kru</option>
-						<option selected="selected" value="KUR">Kurdiska</option>
-						<option value="CKB">Kurdiska (centrala Irak), Sorani</option>
-						<option value="KMR">Kurdiska, norra (Turkiet)</option>
-						<option value="SDH">Kurdiska, södra (Iran)</option>
-						<option value="LAO">Laotiska (Laos)</option>
-						<option value="LAV">Lettiska, (Lettland)</option>
-						<option value="LMA">Limba</option>
-						<option value="LIN">Lingala (Kongo-Kinshasa, Kongo-Brazzaville)</option>
-						<option value="LIT">Litauiska, (Litauen)</option>
-						<option value="LOZ">Lozi</option>
-						<option value="LUG">Luganda/Ganda (Uganda)</option>
-						<option value="LGG">Lugbara, Logbara, Lubarati</option>
-						<option value="LUO">Luo (Kenya och Tanzania)</option>
-						<option value="YMM">Maay</option>
-						<option value="MHI">Madi (Uganda, södra Sudan)</option>
-						<option value="MKD">Makedonska (Makedonien)</option>
-						<option value="MLG">Malagaskiska</option>
-						<option value="MSA">Malajiska</option>
-						<option value="PMY">Malay, Papuan</option>
-						<option value="MAL">Malayalam (Indien)</option>
-						<option value="MLT">Maltesiska (Malta)</option>
-						<option value="MQU">Mandari</option>
-						<option value="MNK">Mandinka (Gambia, Senegal)</option>
-						<option value="MDK">Mangbutu</option>
-						<option value="MRI">Maori (Nya Zeeland)</option>
-						<option value="MAR">Marathi (Indien)</option>
-						<option value="MYX">Masaaba, Gisu, Gugisu, Lumasaaba, Masaba (Uganda)</option>
-						<option value="MLS">Masalit</option>
-						<option value="FIT">Meänkieli (Norrbotten, Tornedalen)</option>
-						<option value="MOL">Moldaviska</option>
-						<option value="MON">Mongoliska</option>
-						<option value="CNR">Montenegrinska</option>
-						<option value="NDE">Ndebele (nord)</option>
-						<option value="NBL">Ndebele (syd)</option>
-						<option value="NLD">Nederländska</option>
-						<option value="NEP">Nepalesiska</option>
-						<option value="NOR">Norska</option>
-						<option value="NUS">Nuer (Sydsudan)</option>
-						<option value="NYA">Nyanja</option>
-						<option value="NYN">Nyankore</option>
-						<option value="UND">Okänd</option>
-						<option value="ORM">Oromo (Etiopien, Kenya)</option>
-						<option value="KUA">Oshiwambo</option>
-						<option value="PHR">Pahari-Potwari (Pakistan)</option>
-						<option value="PAM">Pampangan</option>
-						<option value="PUS">Pashto (Afghanistan, Iran, Pakistan)</option>
-						<option value="PTN">Patani (Indonesien)</option>
-						<option value="FAS">Persiska, Farsi</option>
-						<option value="POL">Polska</option>
-						<option value="POR">Portugisiska</option>
-						<option value="PAN">Punjabi (Indien)</option>
-						<option value="ROM">Romani</option>
-						<option value="RMO">Romani, Abbruzzesi, Serbisk romani, Slovensk-kroatisk romani</option>
-						<option value="RMN">Romani, Arli, Dzambasi, Gurbeti</option>
-						<option value="RMC">Romani, Bashaldo, Ungersk-Slovakisk romani, Romungro</option>
-						<option value="RMF">Romani, Kale, Kalo</option>
-						<option value="RMY">Romani, Lovara, Kalderash</option>
-						<option value="RML">Romani, Polsk romani, Estnisk, Lettisk, Nordrysk, Vitrysk</option>
-						<option value="RMU">Romani, resande romani, Svensk romani, Romani tavringer</option>
-						<option value="RMW">Romani, Walesisk</option>
-						<option value="RON">Rumänska</option>
-						<option value="RUS">Ryska</option>
-						<option value="SSY">Saho (Eritrea)</option>
-						<option value="SMI">Samiska</option>
-						<option value="SME">Samiska (norra)</option>
-						<option value="SIA">Samiska, Akkalasamiska</option>
-						<option value="SMN">Samiska, Enaresamiska</option>
-						<option value="SJK">Samiska, Kemisamiska</option>
-						<option value="SJD">Samiska, Kildinsamiska</option>
-						<option value="SMJ">Samiska, Lulesamiska (Luleå)</option>
-						<option value="SJE">Samiska, Pitesamiska</option>
-						<option value="SMS">Samiska, Skoltsamiska</option>
-						<option value="SMA">Samiska, sydsamiska (södra)</option>
-						<option value="SJT">Samiska, Tersamiska</option>
-						<option value="SMO">Samoanska</option>
-						<option value="SAG">Sango</option>
-						<option value="SRP">Serbiska</option>
-						<option value="HBS">Serbokroatiska</option>
-						<option value="SOT">Sesotho, Sisutho, Souto, Suthu, Suto</option>
-						<option value="SNA">Shona (Zimbabwe)</option>
-						<option value="SND">Sindhi</option>
-						<option value="SIN">Singalesiska (Sri lanka)</option>
-						<option value="SSW">Siswati (Swaziland)</option>
-						<option value="SLK">Slovakiska</option>
-						<option value="SLV">Slovenska</option>
-						<option value="SOM">Somaliska</option>
-						<option value="HMB">Songhai</option>
-						<option value="SNK">Soninke</option>
-						<option value="SPA">Spanska</option>
-						<option value="SUS">Susu</option>
-						<option value="SWA">Swahili</option>
-						<option value="SWL">Svenskt teckenspråk</option>
-						<option value="SYC">Syrianska/assyriska, suryaya, suryoyo</option>
-						<option value="SYR">Syriska</option>
-						<option value="CLD">Syriska, Nyöstarameiska, Keldanska, Fallani, Kilani, Soorath, Suras, Sureth</option>
-						<option value="TRU">Syriska, Turoyo, nyarameiska, suryoyo, surayt, Surani, Turani</option>
-						<option value="TGK">Tadzjikiska</option>
-						<option value="TGL">Tagalog (Filippinerna)</option>
-						<option value="TAM">Tamil (Indien, Sri lanka, Singapore)</option>
-						<option value="TAT">Tatariska (Ryssland, Ukraina, Turkiet, Kina, Finland, Centralasien)</option>
-						<option value="TN">Teckenspråk</option>
-						<option value="SGN">Teckenspråk</option>
-						<option value="TEL">Telugu (Indien)</option>
-						<option value="THA">Thai (Thailand)</option>
-						<option value="BOD">Tibetanska (Kina, Bhutan, Indien, Nepal)</option>
-						<option value="TIG">Tigre (Eritrea)</option>
-						<option value="TIR">Tigrinja (Etiopien, Eritrea)</option>
-						<option value="CES">Tjeckiska</option>
-						<option value="CHE">Tjetjenska</option>
-						<option value="TON">Tonganska</option>
-						<option value="TSN">Tswana, Setswana (Botswana, Sydafrika, Zimbabwe, Namibia)</option>
-						<option value="TUR">Turkiska</option>
-						<option value="TUK">Turkmenska</option>
-						<option value="DEU">Tyska</option>
-						<option value="UIG">Uiguriska (Kina, Kazakstan, Pakistan, Kirgizistan, Tadzjikistan, Indien)</option>
-						<option value="UKR">Ukrainska</option>
-						<option value="SJU">Umesamiska</option>
-						<option value="HUN">Ungerska</option>
-						<option value="HSB">Upper Sorbian</option>
-						<option value="URD">Urdu (Pakistan, Indien)</option>
-						<option value="UZB">Uzbekiska (Uzbekistan)</option>
-						<option value="VIE">Vietnamesiska</option>
-						<option value="BEL">Vitryska</option>
-						<option value="WOL">Wolof (Senegal, Gambia, Mauretanien)</option>
-						<option value="XHO">Xhosa</option>
-						<option value="YOR">Yoruba, Yariba, Yooba</option>
-						<option value="ZUL">Zulu (Sydafrika, Malawi, Moçambique, Swaziland)</option>
-						<option value="ZUN">Zuni</option>
-                </select></td>
-            </tr>
-        </table>
-        <div class="line-break">
-            <hr>
-        </div>
-        <div>
-            <button class="button-hamta">Föregående</button>
-            <button class="button-hamta">Nästa</button>
-        </div>
-    </div>    
+    <div class="bilder"style="background-image:url(https://cdn.hoodin.com/skaneleden/images/ia15xcgeuzsftntsayopcglhl2jdkfim/original.png); position:absolute">
+        <div class="kontaktbord">
+            <h3 class="rubrik">kontakt uppgifter</h3>
+            <p class="rubrik">(*Obligatoriskt fält*)</p>
+            <table>
+                <tr>
+                    <td class="strong">Personnummer</td>
+                    <td>000723-1328</td>
+                </tr>
+                <tr>
+                    <td class="strong">Förnamn</td>
+                    <td>Saleem</td>
+                </tr>
+                <tr>
+                    <td class="strong">Efternamn</td>
+                    <td>Barakat</td>
+                </tr>
+                <tr>
+                    <td class="strong">Adress</td>
+                    <td>Traktörsgatan 9 Lgh 1003</td>
+                </tr>
+                <tr>
+                    <td class="strong">C/O adress</td>
+                    <td><input type="C/O adress" placeholder="C/O adress"></td>
+                </tr>
+                <tr>
+                    <td class="strong">Postadress</td>
+                    <td>Helsingborg</td>
+                </tr>
+                <tr>
+                    <td class="strong">Telefon</td>
+                    <td><input type="Telefonnummer" placeholder="Telefonnummer"></td>
+                </tr>
+                <tr>
+                    <td class="strong">Mobil</td>
+                    <td><input type="Mobilnummer" placeholder="Mobilnummer"></td>
+                </tr>
+                <tr>
+                    <td class="strong">E-postadress</td>
+                    <td><input type="E-postadress" placeholder="E-post"></td>
+                </tr>
+                <tr>
+                    <td class="strong">Bekräfta e-postadress</td>
+                    <td><input type="E-postadress" placeholder="Bekräfta E-post"></td>
+                </tr>
+                <tr>
+                    <td class="strong">Hemkommun</td>
+                    <td>Helsingborg</td>
+                </tr>
+                <tr>
+                    <td class="strong">Modersmål</td>
+                    <td><select name="språk">
+                        <option value=""></option>
+                            <option value="BSA">Abinomn</option>
+                            <option value="ACE">Acehnesiska (Indonesia, Sumatra)</option>
+                            <option value="ACH">Acoli (Uganda)</option>
+                            <option value="AAR">Afar, Danakil (Djibouti, Eritrea, Etiopien)</option>
+                            <option value="AFR">Afrikaans</option>
+                            <option value="AKA">Akan, Asante, Fante, Twi (Ghana, Elfenbenskusten)</option>
+                            <option value="AKS">Akasele, Cemba, Chamba, Kamba, Kasele, Tchamba</option>
+                            <option value="SQI">Albanska</option>
+                            <option value="AMH">Amhariska (Etiopien)</option>
+                            <option value="ARA">Arabiska</option>
+                            <option value="HYE">Armeniska</option>
+                            <option value="ASM">Assamese</option>
+                            <option value="AII">Assyriska, Nyarameiska</option>
+                            <option value="AYM">Aymara (Bolivia)</option>
+                            <option value="AZE">Azerbadjanska</option>
+                            <option value="BAL">Baluchi, Baloci, Baluci, Makrani</option>
+                            <option value="BAM">Bambara (Västafrika)</option>
+                            <option value="BAI">Bamileke (Kamerun)</option>
+                            <option value="BFA">Bari (Södra Sudan)</option>
+                            <option value="BSQ">Basaa</option>
+                            <option value="EUS">Baskiska</option>
+                            <option value="BEM">Bemba, Chibemba, Chiwemba, Ichibemba, Wemba (Zambia)</option>
+                            <option value="BEN">Bengaliska</option>
+                            <option value="BER">Berbiska</option>
+                            <option value="BIK">Bikol</option>
+                            <option value="BIL">Bile (Nigeria)</option>
+                            <option value="BYN">Bilen, Bilein, Bileno, Bilin (Eritrea)</option>
+                            <option value="BIN">Bini eller Edo</option>
+                            <option value="BOS">Bosniska</option>
+                            <option value="BUL">Bulgariska</option>
+                            <option value="MYA">Burmesiska</option>
+                            <option value="CEB">Cebuanska, Binisaya, Sebuano, Sugbuanon, Sugbuhanon, Visayan</option>
+                            <option value="CNH">Chin- Myanmar (Burma, Indien, Bangladesh)</option>
+                            <option value="KDH">Cotocoli, Kotokoli, Temba, Tim, Timu</option>
+                            <option value="DAN">Danska</option>
+                            <option value="DAR">Darginska, Dargi, Dargin, Dargintsy, Khiurkilinskii, Uslar</option>
+                            <option value="PRS">Dari, Parsi, Persian</option>
+                            <option value="DIQ">Dimli</option>
+                            <option value="DIN">Dinka</option>
+                            <option value="DIV">Divehi (Maldiverna)</option>
+                            <option value="DHV">Drehu/Dehu</option>
+                            <option value="ENG">Engelska</option>
+                            <option value="EST">Estniska</option>
+                            <option value="EWE">Ewe (Ghana)</option>
+                            <option value="FAN">Fang (Equatorial Guinea)</option>
+                            <option value="FIJ">Fijianska</option>
+                            <option value="FIL">Filipino</option>
+                            <option value="FIN">Finska</option>
+                            <option value="VLS">Flamländska</option>
+                            <option value="FRA">Franska</option>
+                            <option value="FUL">Fula/Fulani</option>
+                            <option value="FAO">Färöiska</option>
+                            <option value="GAA">Ga (Ghana)</option>
+                            <option value="GBM">Garhwali</option>
+                            <option value="KAT">Georgiska</option>
+                            <option value="HAC">Gorani/Gurani</option>
+                            <option value="ELL">Grekiska</option>
+                            <option value="KAL">Grönländska</option>
+                            <option value="GUJ">Gujarati, Lisan al-dawat (Indien)</option>
+                            <option value="HAU">Hausa</option>
+                            <option value="HEB">Hebreiska</option>
+                            <option value="HIL">Hiligaynon/Ilonggo</option>
+                            <option value="HIN">Hindi</option>
+                            <option value="HMN">Hmong</option>
+                            <option value="IBO">Ibo, Igbo (Nigeria)</option>
+                            <option value="ILO">Iloko/Ilokano</option>
+                            <option value="IND">Indonesiska</option>
+                            <option value="INH">Ingusjiska</option>
+                            <option value="ISL">Isländska</option>
+                            <option value="ITA">Italienska</option>
+                            <option value="JPN">Japanska</option>
+                            <option value="JAV">Javanesiska</option>
+                            <option value="YID">Jiddisch</option>
+                            <option value="YIH">Jiddisch (Väst)</option>
+                            <option value="YDD">Jiddisch (Öst)</option>
+                            <option value="DYO">Jola-Fonyi</option>
+                            <option value="KSP">Kaba (Centrala Sudan)</option>
+                            <option value="KFR">Kachchi</option>
+                            <option value="KEO">Kakwa</option>
+                            <option value="KAM">Kamba, Kekamba, Kikamba (Kenya)</option>
+                            <option value="KAN">Kannada (Indien)</option>
+                            <option value="KAR">Karenska (Burma, Thailand)</option>
+                            <option value="CAT">Katalanska (Katalonien)</option>
+                            <option value="KAZ">Kazakiska (Kazakstan)</option>
+                            <option value="KHA">Khasi</option>
+                            <option value="KHM">Khmer (Kambodja)</option>
+                            <option value="KJG">Khmu</option>
+                            <option value="KIK">Kikuyu (Kenya)</option>
+                            <option value="ZHO">Kinesiska</option>
+                            <option value="HAK">Kinesiska, Hakka</option>
+                            <option value="YUE">Kinesiska, Kantonesiska</option>
+                            <option value="CMN">Kinesiska, Mandarin</option>
+                            <option value="NAN">Kinesiska, Min Nan</option>
+                            <option value="KIN">Kinyarwanda (Rwanda)</option>
+                            <option value="KIR">Kirgisiska</option>
+                            <option value="RUN">Kirundi (Burundi)</option>
+                            <option value="KON">Kongo</option>
+                            <option value="KOR">Koreanska (Korea)</option>
+                            <option value="SES">Koyraboro Senni Songhai</option>
+                            <option value="ROP">Kreolska</option>
+                            <option value="KRI">Krio</option>
+                            <option value="HRV">Kroatiska</option>
+                            <option value="KRO">Kru</option>
+                            <option selected="selected" value="KUR">Kurdiska</option>
+                            <option value="CKB">Kurdiska (centrala Irak), Sorani</option>
+                            <option value="KMR">Kurdiska, norra (Turkiet)</option>
+                            <option value="SDH">Kurdiska, södra (Iran)</option>
+                            <option value="LAO">Laotiska (Laos)</option>
+                            <option value="LAV">Lettiska, (Lettland)</option>
+                            <option value="LMA">Limba</option>
+                            <option value="LIN">Lingala (Kongo-Kinshasa, Kongo-Brazzaville)</option>
+                            <option value="LIT">Litauiska, (Litauen)</option>
+                            <option value="LOZ">Lozi</option>
+                            <option value="LUG">Luganda/Ganda (Uganda)</option>
+                            <option value="LGG">Lugbara, Logbara, Lubarati</option>
+                            <option value="LUO">Luo (Kenya och Tanzania)</option>
+                            <option value="YMM">Maay</option>
+                            <option value="MHI">Madi (Uganda, södra Sudan)</option>
+                            <option value="MKD">Makedonska (Makedonien)</option>
+                            <option value="MLG">Malagaskiska</option>
+                            <option value="MSA">Malajiska</option>
+                            <option value="PMY">Malay, Papuan</option>
+                            <option value="MAL">Malayalam (Indien)</option>
+                            <option value="MLT">Maltesiska (Malta)</option>
+                            <option value="MQU">Mandari</option>
+                            <option value="MNK">Mandinka (Gambia, Senegal)</option>
+                            <option value="MDK">Mangbutu</option>
+                            <option value="MRI">Maori (Nya Zeeland)</option>
+                            <option value="MAR">Marathi (Indien)</option>
+                            <option value="MYX">Masaaba, Gisu, Gugisu, Lumasaaba, Masaba (Uganda)</option>
+                            <option value="MLS">Masalit</option>
+                            <option value="FIT">Meänkieli (Norrbotten, Tornedalen)</option>
+                            <option value="MOL">Moldaviska</option>
+                            <option value="MON">Mongoliska</option>
+                            <option value="CNR">Montenegrinska</option>
+                            <option value="NDE">Ndebele (nord)</option>
+                            <option value="NBL">Ndebele (syd)</option>
+                            <option value="NLD">Nederländska</option>
+                            <option value="NEP">Nepalesiska</option>
+                            <option value="NOR">Norska</option>
+                            <option value="NUS">Nuer (Sydsudan)</option>
+                            <option value="NYA">Nyanja</option>
+                            <option value="NYN">Nyankore</option>
+                            <option value="UND">Okänd</option>
+                            <option value="ORM">Oromo (Etiopien, Kenya)</option>
+                            <option value="KUA">Oshiwambo</option>
+                            <option value="PHR">Pahari-Potwari (Pakistan)</option>
+                            <option value="PAM">Pampangan</option>
+                            <option value="PUS">Pashto (Afghanistan, Iran, Pakistan)</option>
+                            <option value="PTN">Patani (Indonesien)</option>
+                            <option value="FAS">Persiska, Farsi</option>
+                            <option value="POL">Polska</option>
+                            <option value="POR">Portugisiska</option>
+                            <option value="PAN">Punjabi (Indien)</option>
+                            <option value="ROM">Romani</option>
+                            <option value="RMO">Romani, Abbruzzesi, Serbisk romani, Slovensk-kroatisk romani</option>
+                            <option value="RMN">Romani, Arli, Dzambasi, Gurbeti</option>
+                            <option value="RMC">Romani, Bashaldo, Ungersk-Slovakisk romani, Romungro</option>
+                            <option value="RMF">Romani, Kale, Kalo</option>
+                            <option value="RMY">Romani, Lovara, Kalderash</option>
+                            <option value="RML">Romani, Polsk romani, Estnisk, Lettisk, Nordrysk, Vitrysk</option>
+                            <option value="RMU">Romani, resande romani, Svensk romani, Romani tavringer</option>
+                            <option value="RMW">Romani, Walesisk</option>
+                            <option value="RON">Rumänska</option>
+                            <option value="RUS">Ryska</option>
+                            <option value="SSY">Saho (Eritrea)</option>
+                            <option value="SMI">Samiska</option>
+                            <option value="SME">Samiska (norra)</option>
+                            <option value="SIA">Samiska, Akkalasamiska</option>
+                            <option value="SMN">Samiska, Enaresamiska</option>
+                            <option value="SJK">Samiska, Kemisamiska</option>
+                            <option value="SJD">Samiska, Kildinsamiska</option>
+                            <option value="SMJ">Samiska, Lulesamiska (Luleå)</option>
+                            <option value="SJE">Samiska, Pitesamiska</option>
+                            <option value="SMS">Samiska, Skoltsamiska</option>
+                            <option value="SMA">Samiska, sydsamiska (södra)</option>
+                            <option value="SJT">Samiska, Tersamiska</option>
+                            <option value="SMO">Samoanska</option>
+                            <option value="SAG">Sango</option>
+                            <option value="SRP">Serbiska</option>
+                            <option value="HBS">Serbokroatiska</option>
+                            <option value="SOT">Sesotho, Sisutho, Souto, Suthu, Suto</option>
+                            <option value="SNA">Shona (Zimbabwe)</option>
+                            <option value="SND">Sindhi</option>
+                            <option value="SIN">Singalesiska (Sri lanka)</option>
+                            <option value="SSW">Siswati (Swaziland)</option>
+                            <option value="SLK">Slovakiska</option>
+                            <option value="SLV">Slovenska</option>
+                            <option value="SOM">Somaliska</option>
+                            <option value="HMB">Songhai</option>
+                            <option value="SNK">Soninke</option>
+                            <option value="SPA">Spanska</option>
+                            <option value="SUS">Susu</option>
+                            <option value="SWA">Swahili</option>
+                            <option value="SWL">Svenskt teckenspråk</option>
+                            <option value="SYC">Syrianska/assyriska, suryaya, suryoyo</option>
+                            <option value="SYR">Syriska</option>
+                            <option value="CLD">Syriska, Nyöstarameiska, Keldanska, Fallani, Kilani, Soorath, Suras, Sureth</option>
+                            <option value="TRU">Syriska, Turoyo, nyarameiska, suryoyo, surayt, Surani, Turani</option>
+                            <option value="TGK">Tadzjikiska</option>
+                            <option value="TGL">Tagalog (Filippinerna)</option>
+                            <option value="TAM">Tamil (Indien, Sri lanka, Singapore)</option>
+                            <option value="TAT">Tatariska (Ryssland, Ukraina, Turkiet, Kina, Finland, Centralasien)</option>
+                            <option value="TN">Teckenspråk</option>
+                            <option value="SGN">Teckenspråk</option>
+                            <option value="TEL">Telugu (Indien)</option>
+                            <option value="THA">Thai (Thailand)</option>
+                            <option value="BOD">Tibetanska (Kina, Bhutan, Indien, Nepal)</option>
+                            <option value="TIG">Tigre (Eritrea)</option>
+                            <option value="TIR">Tigrinja (Etiopien, Eritrea)</option>
+                            <option value="CES">Tjeckiska</option>
+                            <option value="CHE">Tjetjenska</option>
+                            <option value="TON">Tonganska</option>
+                            <option value="TSN">Tswana, Setswana (Botswana, Sydafrika, Zimbabwe, Namibia)</option>
+                            <option value="TUR">Turkiska</option>
+                            <option value="TUK">Turkmenska</option>
+                            <option value="DEU">Tyska</option>
+                            <option value="UIG">Uiguriska (Kina, Kazakstan, Pakistan, Kirgizistan, Tadzjikistan, Indien)</option>
+                            <option value="UKR">Ukrainska</option>
+                            <option value="SJU">Umesamiska</option>
+                            <option value="HUN">Ungerska</option>
+                            <option value="HSB">Upper Sorbian</option>
+                            <option value="URD">Urdu (Pakistan, Indien)</option>
+                            <option value="UZB">Uzbekiska (Uzbekistan)</option>
+                            <option value="VIE">Vietnamesiska</option>
+                            <option value="BEL">Vitryska</option>
+                            <option value="WOL">Wolof (Senegal, Gambia, Mauretanien)</option>
+                            <option value="XHO">Xhosa</option>
+                            <option value="YOR">Yoruba, Yariba, Yooba</option>
+                            <option value="ZUL">Zulu (Sydafrika, Malawi, Moçambique, Swaziland)</option>
+                            <option value="ZUN">Zuni</option>
+                    </select></td>
+                </tr>
+            </table>
+            <div class="line-break">
+                <hr>
+            </div>
+            <div style="background-color: rgb(255, 255, 255);">
+                <a href="komplettera.html"><button class="button-hamta" >Föregående</button></a>
+                <a href="hämta.html"><button class="button-hamta" id="button-hamta">Nästa</button></a>
+            </div>
+        </div>    
+    </div>
 </body>
 </html>
